@@ -36,3 +36,36 @@ def simpleTestFunction(logger, a, b):
 
     return result
 
+
+@lD.log(logBase + '.simpleTestFunction1')
+def simpleTestFunction1(logger, a, b):
+    '''another simple test function for testing
+    
+    this takes two inputs and returns the 
+    the string of a at index b. 
+    This might result in an error. 
+    If such a thing happens, this function 
+    will catch this error and log it. 
+    It will raise the error again to be 
+    caught at a higher level function.
+    
+    Parameters
+    ----------
+    a : {string}
+        the first input
+    b : {int}
+        the second input
+    
+    Returns
+    -------
+    similar type as `a` 
+        the 'b'-th index of 'a'
+    '''
+    try:
+        result = a[b]
+    except Exception as e:
+        logger.error('Unable to retrieve index of [{}] at [{}] -th index:\n{}'.format(
+            a, b, str(e)))
+        raise
+
+    return result

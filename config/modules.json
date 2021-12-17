@@ -6,6 +6,13 @@
         "description": "a simple example module",
         "owner"      : ""
     }, {
+        "moduleName" : "module2",
+        "path"       : "modules/module2/module2.py",
+        "execute"    : true,
+        "description": "duplicated module with test examples",
+        "owner"      : ""
+        
+    },{
         "moduleName": "bayTune",
         "path": "modules/bayTune/bayTune.py",
         "execute": false,

@@ -94,37 +94,6 @@ def main(logger, resultsDict):
     # for other functions to follow
     # -----------------------------------
 
-    sampleValues = [
-        (1, 2),
-        (1.2, 5),
-        (3, 'a'),
-        ('First', 'Second'),
-        (55,)
-    ]
-
-    for s in sampleValues:
-        try:
-            sL.simpleTestFunction(*s)
-        except Exception as e:
-            logger.error('Unable to perform addition with values [{}]\n:{}'.format(
-                s, str(e)))
-
-
-    sampleValues2 = [
-        ('lame', 2),
-        ('madeline', 5),
-        ('mad', 6)
-    ]
-
-    for s in sampleValues2:
-        try:
-            sL.simpleTestFunction1(*s)
-        except Exception as e:
-            logger.error('Unable to perform indexing with values [{}] :\n{}'.format(
-            s, str(e)))
-
-    return
-
 if __name__ == '__main__':
 
     # Let us add an argument parser here

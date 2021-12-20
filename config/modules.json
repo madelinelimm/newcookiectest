@@ -2,17 +2,38 @@
     {
         "moduleName" : "module1",
         "path"       : "modules/module1/module1.py",
-        "execute"    : true,
+        "execute"    : false,
         "description": "a simple example module",
         "owner"      : ""
     }, {
         "moduleName" : "module2",
         "path"       : "modules/module2/module2.py",
-        "execute"    : true,
+        "execute"    : false,
         "description": "duplicated module with test examples",
         "owner"      : ""
         
-    },{
+    }, {
+        "moduleName" : "module_1",
+        "path"       : "modules/module_1/module_1.py",
+        "execute"    : true,
+        "description": "Cleaning of raw data",
+        "owner"      : ""
+    
+    }, {
+        "moduleName" : "module_2",
+        "path"       : "modules/module_2/module_2.py",
+        "execute"    : true,
+        "description": "Oversampling and splitting intermediate data into train and test set",
+        "owner"      : ""
+    
+    }, {
+        "moduleName" : "module_3",
+        "path"       : "modules/module_3/module_3.py",
+        "execute"    : true,
+        "description": "Prediction with XGBoost Classifier",
+        "owner"      : ""
+    
+    }, {
         "moduleName": "bayTune",
         "path": "modules/bayTune/bayTune.py",
         "execute": false,
